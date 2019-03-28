@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YCIDCardRecognizer"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "身份证号码识别"
 
   spec.description  = <<-DESC
