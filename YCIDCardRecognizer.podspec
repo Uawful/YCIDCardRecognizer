@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YCIDCardRecognizer"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "身份证号码识别"
 
   spec.description  = <<-DESC
@@ -26,8 +26,8 @@ Pod::Spec.new do |spec|
   spec.platform      = :ios, "9.0"
 #  spec.framework    = "IDCardRecognizeSDK"
   spec.source        = { :http => "http://ycprivatebucket.oss-cn-hangzhou.aliyuncs.com/IDCardRecognizeSDK.framework.zip" }
-  spec.resources     = "Classes/tessdata"
-  spec.vendored_frameworks = "Classes/IDCardRecognizeSDK.framework"
+  spec.resources     = "tessdata"
+  spec.vendored_frameworks = "IDCardRecognizeSDK.framework"
 
 #spec.dependency "OpenCV", "~> 3.0.0"
 #spec.dependency "TesseractOCRiOS", "~> 4.0.0"
