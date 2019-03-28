@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
 
   spec.platform      = :ios, "9.0"
 #  spec.framework    = "IDCardRecognizeSDK"
-  spec.source        = { :git => "https://github.com/Uawful/YCIDCardRecognizer/IDCardRecognizeSDK.framework.zip" }
+  spec.source        = { :http => "http://ycprivatebucket.oss-cn-hangzhou.aliyuncs.com/IDCardRecognizeSDK.framework.zip" }
   spec.resources     = "Classes/tessdata"
   spec.vendored_frameworks = "Classes/IDCardRecognizeSDK.framework"
 
