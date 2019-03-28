@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YCIDCardRecognizer"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "身份证号码识别"
 
   spec.description  = <<-DESC
@@ -23,16 +23,13 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "jeremy" => "441406859@qq.com" }
 
-  spec.platform     = :ios, "9.0"
+  spec.platform      = :ios, "9.0"
 #  spec.framework    = "IDCardRecognizeSDK"
-  spec.source       = { :git => "https://github.com/Uawful/YCIDCardRecognizer.git", :tag => "#{spec.version}" }
+  spec.source        = { :git => "https://github.com/Uawful/YCIDCardRecognizer/IDCardRecognizeSDK.framework.zip" }
+  spec.resources     = "Classes/tessdata"
+  spec.vendored_frameworks = "Classes/IDCardRecognizeSDK.framework"
 
- spec.source_files  = "Classes","Classes/**/*.{h,m}"
-
-     spec.resources = "Classes/tessdata"
-
-#spec.public_header_files = "Classes/**/*.{h,m}"
-  spec.dependency "OpenCV", "~> 3.0.0"
-  spec.dependency "TesseractOCRiOS", "~> 4.0.0"
+#spec.dependency "OpenCV", "~> 3.0.0"
+#spec.dependency "TesseractOCRiOS", "~> 4.0.0"
 
 end
